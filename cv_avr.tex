@@ -1,0 +1,176 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill overview bubbles
+\newcommand\skills{
+	\smartdiagram[bubble diagram]{
+        \textbf{Ingeniería}\\\textbf{en}\\\textbf{Software},
+        \textbf{Programación},
+        \textbf{~~~~~DevOps~~~~~~~~},
+        \textbf{~~~~~Ciencia~~~~~~~}\\\textbf{~~de Datos~~},
+        \textbf{~Arquitectura~}
+    }
+}
+
+% Technical skill bars
+\programming{{Terraform $\textbullet$ Crossplane $\textbullet$ FluxCD / 5},{AzDO $\textbullet$ GitLab CI$\slash$CD $\textbullet$ GitHub Actions / 5},{C $\textbullet$ Python $\textbullet$ JS$\slash$TS $\textbullet$ Java $\textbullet$ \LaTeX / 6},{AWS: ec2 $\textbullet$ s3 $\textbullet$ rds $\textbullet$ eks$\ldots$ / 5}}
+
+% Soft skills bullet points
+\softskills{
+    Comunicativo $\textbullet$ Persistente $\textbullet$ Directo\\
+    Creativo $\textbullet$ Profesional $\textbullet$ Detallista\\
+    Puntual $\textbullet$ Estudioso $\textbullet$ Trabajo en Equipo
+}
+
+% Education
+\education{
+\textbf{Ingeniería Física} \\
+Universidad de Santiago de Chile \\
+2017 - 2022 | Santiago, Chile
+}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{Andoni\\Vizcaya Rodríguez \\ \color{rpm_text}\footnotesize{19.287.552-8}} % Your name
+\cvjobtitle{ Físico$\slash$Ingeniero en Software } % Job
+% title/career
+
+\cvlinkedin{Andoni Vizcaya}
+\cvgithub{andonivizcaya} % It was supposed to be my PornHub but is ok :(
+\cvnumberphone{+56 9 4411 9108} % Phone number
+\cvsite{08/10/1995} % More wia
+\cvmail{andonivizcaya@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experiencia}
+
+\begin{twenty} % Environment for a list with descriptions
+\twentyitem
+    	{\small May 2023 -}
+		{\small Presente}
+        {Senior DevOps Engineer}
+        {\href{https://sovos.com}{Sovos}}
+        {\small Las Condes, Chile}
+        {
+        \begin{itemize}
+            \item IaC en Terraform y Crossplane para despliegue de infraestructura
+            \item Pipelines CI/CD en AzDO
+            \item Clusters k8s multi-tenat usando herramientas modernas
+            \item Arquitectura de software para aplicaciones nativas en cloud
+            \item Asumir la responsabilidad de \textit{Platform Engineer} dentro del equipo
+            \item Migración y rediseño de servicios y aplicaciones on-premise a la nube
+            \item Infraestructura y desarrollo para aplicaciones ETL
+        \end{itemize}}
+        \\
+
+\twentyitem
+    	{\small Dic 2021 -}
+		{\small May 2023}
+        {Desarrollador de Software}
+        {\href{https://pleyasoft.com/}{PleyaSoft}/\href{https://cencosud.com}{Cencosud}}
+        {\small Ñuñoa, Chile}
+        {
+        \begin{itemize}
+            \item Aplicación full-stack de autoservicio Cencosud (Node/React/Native)
+            \item Meta-aplicación para realizar tests unitarios y end to end
+            \item Dashboards usando herramientas de data science en python
+            \item Responsable de despliegues de la aplicación en AWS
+        \end{itemize}}
+        \\
+
+\twentyitem
+    	{\small Jun 2021 -}
+		{\small Dic 2021}
+        {Desarrollador de Software}
+        {\href{https://athos.cl/}{Athos}/\href{https://editrade.cl}{Editrade}}
+        {\small Providencia, Chile}
+        {
+        \begin{itemize}
+            \item Desarrollo de módulos para Odoo en python y C
+            \item Aplicación de monitoreo y automatización de respaldos de DBs
+            \item Hardware usando arduino, raspberry pi y más
+        \end{itemize}}
+        \\
+
+\twentyitem
+    	{\small Mar 2019 -}
+		{\small Mar 2020}
+        {Asistente de investigación}
+        {\href{https://uchile.cl/}{Universidad de Chile}/\href{https://dfi.uchile.cl/}{dfi (FCFM)}}
+        {\small Santiago, Chile}
+        {
+        \begin{itemize}
+            \item Investigación en Teoría de Turbulencia de Ondas (WT)
+            \item Confección de setup experimental, toma y análisis de datos
+            \item Utilización de ML para crear modelos predictivos (C++/python)
+        \end{itemize}}
+
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 RESEARCH
+%----------------------------------------------------------------------------------------
+\section{Proyectos Técnicos}
+\begin{twenty}
+	\twentyitem
+    	{\small Abr 2024 -}
+		{\small Presente}
+        {Hydrogen Orbital}
+        {\href{https://github.com/andonivizcaya/hydrogen_orbital}{hydrogen\_orbital}}
+        {\small Santiago}
+        {
+        {\begin{itemize}
+            \item Visualización de orbitales atómicos usando raylib con C puro
+            \item Proyecto compilado a Linux, MacOS, Windows y WebAssembly
+            \item Wasm corriendo en \href{https://andonivizcaya.github.io/hydrogen_orbital/}{\textbf{hydrogen\_orbital}} con CI en github actions
+            \item Trabajando en implementación de ágebra geométrica para rotores
+		\end{itemize}
+        }}
+\end{twenty}
+
+\section{Idiomas}
+\begin{itemize}
+    \item \textbf{Español}: nativo
+    \item \textbf{Inglés}: avanzado
+\end{itemize}
+
+
+\section{Hobbies}
+\begin{itemize}
+    \item \textbf{Deporte} (trekking/hiking, natación, escalada)
+    \item \textbf{Música} (composición y como usuario)
+    \item \textbf{Ciencia} (física > matemáticas > electrónica > vim)
+\end{itemize}
+
+\end{document}
+

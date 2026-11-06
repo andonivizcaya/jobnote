@@ -1,0 +1,44 @@
+%% Copyright (c) 2024-2026 Andoni Vizcaya <andoni.vizcaya@usach.cl>
+%%
+%% Distributable under the MIT License:
+%% http://www.opensource.org/licenses/mit-license.php
+%%
+\ProvidesPackage{rose_pine_moon}[2024/04/04 ]
+
+\usepackage{palette}
+
+\pagecolor{rpm_base}
+\color{rpm_text}
+
+\newcommand{\lstconsolestyle}{
+\lstset{
+	backgroundcolor=\color{rpm_surface},
+	basicstyle=\color{rpm_text}\fontfamily{fvm}\footnotesize\selectfont,
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	commentstyle=\color{rpm_foam},
+	deletekeywords={...},
+	escapeinside={\%*}{*)},
+	extendedchars=true,
+	frame=single,
+	keepspaces=true,
+	keywordstyle=\color{rpm_pine},
+	%language=none,
+	morekeywords={*,...},
+	numbers=none,
+	numbersep=5pt,
+  framerule=2pt,
+	numberstyle=\color{rpm_highlight_high}\tiny\selectfont,
+	rulecolor=\color{rpm_muted},
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	stepnumber=2,
+	stringstyle=\color{rpm_iris},
+	tabsize=2
+}
+}
+
+\endinput
+

@@ -1,0 +1,44 @@
+%% Copyright (c) 2024-2026 Andoni Vizcaya <andoni.vizcaya@usach.cl>
+%%
+%% Distributable under the MIT License:
+%% http://www.opensource.org/licenses/mit-license.php
+%%
+\ProvidesPackage{rose_pine_dawn}[2024/04/04 ]
+
+\usepackage{palette}
+
+\pagecolor{rpd_base}
+\color{rpd_text}
+
+\newcommand{\lstconsolestyle}{
+\lstset{
+	backgroundcolor=\color{rpd_surface},
+	basicstyle=\color{rpd_text}\fontfamily{fvm}\footnotesize\selectfont,
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	commentstyle=\color{rpd_foam},
+	deletekeywords={...},
+	escapeinside={\%*}{*)},
+	extendedchars=true,
+	frame=single,
+	keepspaces=true,
+	keywordstyle=\color{rpd_pine},
+	%language=none,
+	morekeywords={*,...},
+	numbers=none,
+	numbersep=5pt,
+  framerule=2pt,
+	numberstyle=\color{rpd_highlight_high}\tiny\selectfont,
+	rulecolor=\color{rpd_muted},
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	stepnumber=2,
+	stringstyle=\color{rpd_iris},
+	tabsize=2
+}
+}
+
+\endinput
+
